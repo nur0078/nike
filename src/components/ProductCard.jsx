@@ -7,17 +7,22 @@ const ProductCard = ({ product }) => {
         alt="shoe collection"
         width={200}
         height={100}
-        className=""
+        className="mb-6"
       />
 
-      <span className="flex my-2 mx-auto">
+      <span className="flex mx-auto my-2">
         <img src={star} width={16} height={16} className="mr-1" />
-        <p className="font-montserrat text-sm text-slate-gray ml-1 ">(4.5)</p>
+        <p className="font-montserrat text-sm text-slate-gray ml-1">(4.5)</p>
       </span>
 
-      <span className="font-bold font-montserrat ">{product.name}</span>
-      <br />
-      <span className="text-coral-red  font-montserrat">{product.price}</span>
+      <div className="flex flex-col">
+        <span className=" font-semibold font-montserrata mb-1">
+          {product.name}
+        </span>
+        <span className="text-coral-red font-medium font-montserrat">
+          {product.price}
+        </span>
+      </div>
     </div>
   );
 };
