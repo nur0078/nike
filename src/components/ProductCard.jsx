@@ -5,9 +5,9 @@ const ProductCard = ({ product }) => {
       <img
         src={product.imgURL}
         alt="shoe collection"
-        width={130}
+        width={200}
         height={100}
-        className="object-contain"
+        className=""
       />
 
       <span className="flex my-2 mx-auto">
@@ -15,9 +15,9 @@ const ProductCard = ({ product }) => {
         <p className="font-montserrat text-sm text-slate-gray ml-1 ">(4.5)</p>
       </span>
 
-      <span className="text-black ">{product.name}</span>
+      <span className="font-bold font-montserrat ">{product.name}</span>
       <br />
-      <span>{product.price}</span>
+      <span className="text-coral-red  font-montserrat">{product.price}</span>
     </div>
   );
 };
