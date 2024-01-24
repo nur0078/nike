@@ -12,7 +12,7 @@ const PopularProducts = () => {
         <br />
         Discover a world of comfort, design, and value.
       </p>
-      <div className="flex justify-around ">
+      <div className="flex justify-around gap-4">
         {products.map((product) => (
           <div key={product} className="">
             <div className="">
