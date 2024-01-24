@@ -8,13 +8,13 @@ import {
   Subscribe,
   SuperQuality,
 } from "./sections";
-import Nav from './components/Nav'
+import Nav from "./components/Nav";
 
 const App = () => (
   <main className="relative">
     <Nav />
-    <section className="xl:padding-1 wide:padding-r padding-b">
-      <Hero  />
+    <section className="xl:padding-l wide:padding-r padding-b">
+      <Hero />
     </section>
     <section className="padding">
       <PopularProducts />
@@ -37,7 +37,6 @@ const App = () => (
     <section className="bg-black paddind-x padding-t pb-8">
       <Footer />
     </section>
-
   </main>
 );
 
